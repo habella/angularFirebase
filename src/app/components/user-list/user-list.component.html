@@ -1,0 +1,23 @@
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th>Nombre</th>
+      <th>Apellidos</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <!--Aquí recorro los usuarios que vienen del servidor-->
+    <tr *ngFor="let item of _user.users" >
+      <td>{{item.nombre}}</td>
+      <td>{{item.apellidos}}</td>
+      <td>
+        <a class="btn" (click)="onDelete(item)">
+          <i class="fa fa-trash-o"></i>
+        </a>
+      </td>
+    </tr> 
+
+  </tbody>
+</table>

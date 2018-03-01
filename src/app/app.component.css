@@ -1,0 +1,19 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+button{
+    margin-right: 10px;
+}
+
+.divGeneral{
+    margin-top:20px; 
+}
+
+.mat-toolbar-multiple-rows {
+  min-height: 45px !important;
+}
+.mat-toolbar-row, .mat-toolbar-single-row {
+  height: 45px !important;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}

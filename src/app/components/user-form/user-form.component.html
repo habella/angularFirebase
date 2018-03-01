@@ -1,0 +1,13 @@
+  <div class="form-group">
+    <label for="idNombre">Nombre</label>
+    <!--Input para recoger el nombre del usuario-->
+    <input type="text" [(ngModel)]="user.nombre" class="form-control" id="idNombre" placeholder="Nombre">
+  </div>  
+  <div class="form-group">
+    <label for="idApellidos">Apellidos</label>
+    <!--Input para recoger los apellidos del usuario-->
+    <input type="text" [(ngModel)]="user.apellidos" class="form-control" id="idApellidos" placeholder="Apellidos">
+  </div>
+  
+  <!--Botón para enviar los datos del usuario-->
+  <button type="submit" class="btn btn-primary" (click)="createUser()">Enviar</button>
